@@ -67,7 +67,6 @@ class LoginController extends Controller
             $user = new User;
             $user->name = $provider_user->name;
             $user->email = $provider_user->email;
-            $user->password = '123456';
             $user->save();
         }
         
